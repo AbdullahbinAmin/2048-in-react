@@ -1,12 +1,7 @@
-import React, { ReactNode } from "react";
-import { tileCount as defaultTileCount } from "../index"; // <--- Updated import path
+import React from "react";
+import { tileCount as defaultTileCount } from "../index";
 
-type BoardContextType = {
-  containerWidth: number;
-  tileCount: number;
-};
-
-export const BoardContext = React.createContext<BoardContextType>({
+export const BoardContext = React.createContext({
   containerWidth: 0,
   tileCount: defaultTileCount,
 });
@@ -14,7 +9,7 @@ export const BoardContext = React.createContext<BoardContextType>({
 type Props = {
   containerWidth?: number;
   tileCount?: number;
-  children: ReactNode;
+  children: any;
 };
 
 export const BoardProvider = ({
