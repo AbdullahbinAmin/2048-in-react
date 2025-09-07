@@ -1,7 +1,7 @@
 {
   "name": "2048-in-react-abdullah",
   "version": "0.1.0",
-  "homepage": "https://abdullahbinamin.github.io/2048-in-react/",
+  "homepage": "https://AbdullahbinAmin.github.io/2048-in-react/",
   "license": "MIT",
   "dependencies": {
     "react": "^17.0.2",

@@ -1,5 +1,5 @@
 import React from "react";
-import { tileCount as defaultTileCount } from "../index";
+import { tileCount as defaultTileCount } from '../index';
 export const TILE_COUNT = 4; // Use a default value, e.g., 4 for a 4x4 board
 
 export const BoardContext = React.createContext({
