@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "es5", 
+    // The JavaScript version the TypeScript compiler outputs.
+    // ES5 ensures compatibility with older browsers.
+
+    "lib": ["dom", "dom.iterable", "esnext"], 
+    // The libraries TypeScript uses for type checking.
+    // "dom" = browser APIs, "dom.iterable" = allows iterating over DOM collections,
+    // "esnext" = modern JavaScript features.
+
+    "allowJs": true, 
+    // Lets TypeScript process regular .js files along with .ts/.tsx.
+
+    "skipLibCheck": true, 
+    // Skips type-checking of external library files for faster compilation.
+
+    "esModuleInterop": true, 
+    // Enables compatibility between CommonJS and ES Modules.
+
+    "allowSyntheticDefaultImports": true, 
+    // Allows importing default exports even if the module doesn’t have one.
+
+    "strict": true, 
+    // Turns on all strict type-checking options for safer code.
+
+    "forceConsistentCasingInFileNames": true, 
+    // Ensures that file imports match the exact casing of filenames.
+
+    "noFallthroughCasesInSwitch": true, 
+    // Prevents accidental fallthrough in switch statements.
+
+    "module": "esnext", 
+    // Sets the module system for compilation (modern JavaScript modules).
+
+    "moduleResolution": "node", 
+    // Tells TypeScript how to look for modules (like Node.js does).
+
+    "resolveJsonModule": true, 
+    // Allows importing JSON files as modules.
+
+    "isolatedModules": true, 
+    // Ensures each file can be transpiled independently (needed for React projects).
+
+    "noEmit": true, 
+    // Tells TypeScript not to emit JS files; we only use it for type checking.
+
+    "jsx": "react-jsx" 
+    // Sets JSX transform for React 17+ using the new JSX runtime.
+  },
+  "include": ["src"] 
+  // Specifies which files/folders TypeScript should process.
+}
