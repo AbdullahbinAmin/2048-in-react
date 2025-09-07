@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { tileCount as defaultTileCount } from "../index";
+import { tileCount as defaultTileCount } from "../index.html"; // <--- Updated import path
 
 type BoardContextType = {
   containerWidth: number;
